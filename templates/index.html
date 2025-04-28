@@ -1,0 +1,358 @@
+<html>
+    <head>
+        <title>EchoX</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="icon" type="image/png" href="/static/images/echox.png">
+    </head>
+    <body>
+        <!--header starts-->
+    <div class="header">
+        <header class="header-content">
+            <a href="#logo" class="logo">
+                <img src="/static/images/echox.png" alt="logoImage" class="logo-icon" loading="lazy">
+                <span class="logo-text">EchoX</span>
+            </a>
+
+            <nav class="nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#upload" class="nav-link">Upload</a>
+                <a href="#howitworks" class="nav-link">How It Works</a>
+                <a href="#demo" class="nav-link">Demo</a>
+            </nav>
+
+            <a href="#contact" class="contact-button">Contact Us</a>
+        </header>
+    </div> 
+    <!--header ends-->
+    
+    <!--content starts-->
+    <div class="content" id="home">
+        <section class="main-section">
+            <div class="content-left">
+                <p class="section-label">Very proud to introduce</p>
+                <h1 class="section-title">Crystal Clear Sound with EchoX</h1>
+                <p class="section-description">
+                    EchoX is an innovative platform designed to provide seamless and efficient echo cancellation. Our cutting-edge 
+                    technology helps you achieve crystal-clear audio, free from unwanted noise and interference. Join us on a transformative
+                    journey to enhance your audio experience and unlock the power of clear communication.
+                </p>
+                <div class="button-group">
+                    <a href="#upload" class="start-button">Start now</a>
+                    <a href="#howitworks" class="tour-button">How It Works</a>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="image-container">
+                    <img src="/static/images\usgs-hoS3dzgpHzw-unsplash.jpg" alt="Section image" class="section-image">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--content ends-->
+
+    <!--upload section starts-->
+    
+    <div class="upload-wrapper">
+        <div class="upload-section" id="upload">
+            <form action="/process" method="POST" enctype="multipart/form-data">
+
+                <label for="audio-upload" class="upload-label">Upload Audio</label>
+                <!-- <input id="audio-upload" type="file" accept="audio/*" name="inputbox" required> -->
+                <input id="audio-upload" type="file" accept="audio/*" name="file" required>
+                <span id="file-name" class="file-name">No file chosen</span>
+                <div class="btn-upload-section">
+                    <button onclick="reset()">Reset</button>
+                    <button type="submit">Remove Echo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    
+    <!--upload section ends-->
+
+    <!--grid section start-->
+    <div class="feature-container" id="features">
+        <div class="feature-content">
+            <div class="main-info">
+                <h2 class="main-title">Why Choose EchoX</h2>
+                <p class="main-description">
+                    At EchoX, we offer unmatched precision in echo cancellation technology. Our platform combines advanced algorithms and 
+                    intuitive design to deliver seamless, high-quality audio processing. Whether you’re a professional or a casual user, 
+                    EchoX ensures an optimal experience, eliminating echo and enhancing sound clarity every time.
+                </p>
+            </div>
+            <div class="feature-grid">
+
+                <!--card 1-->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-png" src="/static/images\precision.jpeg">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">Precision</div>
+                        <div class="feature-description">EchoX uses advanced algorithms for accurate echo removal, ensuring crisp, 
+                            clear audio in any environment</div>
+                    </div>
+                </div>
+
+                <!--card 2-->
+
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-png" src="/static/images\simplicity.png">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">Simplicity</div>
+                        <div class="feature-description">The user-friendly interface makes it easy to process audio without any technical 
+                            knowledge or effort.
+                        </div>
+                    </div>
+                </div>
+
+                <!--card 3-->
+
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-png" src="/static/images\quality.png">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">Quality</div>
+                        <div class="feature-description">Experience superior audio output with enhanced clarity, depth, and balanced sound
+                            every time.
+                        </div>
+                    </div>
+                </div>
+
+                <!--card 4-->
+
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-png" src="/static/images\customization.png">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">Customization</div>
+                        <div class="feature-description">Adjust cancellation settings for tailored audio output to match your specific 
+                            needs and preferences.
+                        </div>
+                    </div>
+                </div>
+
+                <!--card 5-->
+
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-png" src="/static/images\speed.png">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">Speed</div>
+                        <div class="feature-description">EchoX delivers fast processing times, providing instant echo removal without 
+                            compromising on quality.
+                        </div>
+                    </div>
+                </div>
+
+                <!--card 6-->
+
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-png" src="/static/images\affordability.png">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">Affordability</div>
+                        <div class="feature-description">Enjoy high-quality echo cancellation at competitive rates with no hidden costs or
+                            fees.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--grid section end-->
+
+    <!--how it  works section starts-->
+    <div class="howitworks" id="howitworks">
+        <h1>How it works</h1>
+
+        <div class="works-grid">
+            <div class="works-card">
+                <p id="work-grid-heading">Step 1</p>
+                <h2>Upload your file</h2>
+                <img src="/static/images/hw1.webp" alt="hw1">
+                <p id="work-grid-desc">Our tool supports multiple formats including MP3 and WAV</p>
+            </div>
+            <div class="works-card">
+                <p id="work-grid-heading">Step 2</p>
+                <h2>Processing</h2>
+                <img src="/static/images/hw2.webp" alt="hw2">
+                <p id="work-grid-desc">Let EchoX identify and suppress unwanted echoes and reverb in just seconds./p>
+            </div>
+            <div class="works-card">
+                <p id="work-grid-heading">Step 3</p>
+                <h2>Upload your file</h2>
+                <img src="/static/images/hw3.webp" alt="hw3">
+                <p id="work-grid-desc">Your improved audio is ready to download and use right away.</p>
+            </div>
+        </div>
+    </div>
+    <!--how it  works section ends-->
+
+    <!--example section starts-->
+    <div class="example-section">
+        <h1>Examples</h1>
+    
+        <div class="example-card">
+            <div class="ex-pic">
+                <img src="/static/images\ex1.png" alt="ex1">
+            </div>
+            <div class="ex-content">
+                <h2>YouTuber Scenario</h2>
+                <p class="ex-desc">Upload your recorded vlog with some room echo. Echo Remover AI will reduce the echo so that your speech 
+                    is more prominent and easy to understand.</p>
+            </div>
+        </div>
+
+        <div class="example-card">
+            <div class="ex-content">
+                <h2>Podcaster Example</h2>
+                <p class="ex-desc">Imagine you’re conducting an interview remotely, and your guest’s audio has distracting reverb. Upload 
+                    it to Echo Remover AI, and enjoy a cleaner, more professional result.
+                </p>
+            </div>
+            <div class="ex-pic">
+                <img src="/static/images\ex2.png" alt="ex2">
+            </div>
+        </div>
+
+        <div class="example-card">
+            <div class="ex-pic">
+                <img src="/static/images\ex3.png" alt="ex3">
+            </div>
+            <div class="ex-content">
+                <h2>Online Educator</h2>
+                <p class="ex-desc">You’ve recorded a lesson in a room with suboptimal acoustics, which leaves an echo. Echo Remover AI 
+                    makes your voice clear, making it easier for students to concentrate on your lesson.
+                </p>
+            </div>
+        </div>
+        
+        
+            
+        </div>
+
+    </div>
+    <!--example section ends-->
+
+    <!--demo section starts-->
+    <div class="demo" id="demo">
+        <h2>Demo</h2>
+        <p class="demo-para">
+            See how it works before trying is yourself? Our Live Demo is here for you:
+        </p>
+        <div class="demo-container">
+            <div class="demo-vdo">
+                <img src="/static/images\ex1.png" alt="">
+            </div>
+            <div class="demo-steps">
+                <h3 class="step-heading">Step 1:</h3>
+                <p class="demo-para">Upload an audio file in MP3 or WAV format.
+                </p>
+                <h3 class="step-heading">Step 2:</h3>
+                <p class="demo-para">Watch as our advanced AI processes your audio to remove echoes and deliver crisp, clear sound.
+                </p>
+                <h3 class="step-heading">Step 3:</h3>
+                <p class="demo-para">Download the improved audio file and use it for your podcasts, videos, classes, or meetings.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--demo section ends-->
+
+    <!--footer section starts-->
+    <div class="footer-container">
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="comp-logo">
+                    <a class="logo-link" href="#">
+                        <img class="logo-png" src="/static/images\echox.png">
+                        EchoX
+                    </a>
+                </div>
+                <p class="filler-text">Crystal Clear Sound with EchoX</p>
+                <div class="socials">
+                </div>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">
+                        Products
+                    </div>
+                    <ul class="footer-links-list">
+                        <li><a class="footer-link" href="#">Overview</a></li>
+                        <li><a class="footer-link" href="#">Solutions</a></li>
+                        <li><a class="footer-link" href="#">Pricing</a></li>
+                        <li><a class="footer-link" href="#">Customers   </a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">
+                        Company
+                    </div>
+                    <ul class="footer-links-list">
+                        <li><a class="footer-link" href="#">About</a></li>
+                        <li><a class="footer-link" href="#">Investor<br>Relations</a></li>
+                        <li><a class="footer-link" href="#">Jobs</a></li>
+                        <li><a class="footer-link" href="#">Press</a></li>
+                        <li><a class="footer-link" href="#">Blog   </a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">
+                        Support
+                    </div>
+                    <ul class="footer-links-list">
+                        <li><a class="footer-link" href="#">Contact</a></li>
+                        <li><a class="footer-link" href="#">Documentation</a></li>
+                        <li><a class="footer-link" href="#">Chat</a></li>
+                        <li><a class="footer-link" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid-column">
+                    <div class="footer-grid-heading">
+                        Legal
+                    </div>
+                    <ul class="footer-links-list">
+                        <li><a class="footer-link" href="#">Terms of Service</a></li>
+                        <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                        <li><a class="footer-link" href="#">Cookie Setting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-copyright">
+            © 2025 - EchoX. All rights reserved.
+        </div>
+    </div>
+    <!--footer section ends-->
+
+    <script>
+        const input = document.getElementById("audio-upload");
+        const fileName = document.getElementById("file-name");
+    
+        input.addEventListener("change", function () {
+            if (this.files && this.files.length > 0) {
+                fileName.textContent = this.files[0].name;
+            } else {
+                fileName.textContent = "No file chosen";
+            }
+        });
+        function reset() {
+            input.value = '';  // Clear the file input
+            fileName.textContent = "No file chosen";  // Reset the file name text
+        }
+        
+    </script>
+    </body>
+</html>
