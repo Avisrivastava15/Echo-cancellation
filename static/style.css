@@ -412,6 +412,17 @@ body{
     padding:2rem;
 }
 
+.demo-vdo{
+    height: auto;
+    width: 100%;
+    background-color: #1e3a8a;
+}
+
+video{
+    height: auto;
+    width: 100%;
+}
+
 .step-heading{
     margin: 1rem 0;
 }
